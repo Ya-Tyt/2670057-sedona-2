@@ -1,6 +1,6 @@
 # Личный проект «Седона»
 
-* Студент: [Елена (Ya Tyt) Дмитриева](https://up.htmlacademy.ru/htmlcss-individual/2/user/2670057).
+* Студент: [Елена Дмитриева](https://up.htmlacademy.ru/htmlcss-individual/2/user/2670057).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
