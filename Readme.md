@@ -3,6 +3,7 @@
 * Студент: [Елена Дмитриева](https://up.htmlacademy.ru/htmlcss-individual/2/user/2670057).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 * Сайт: [Мой проект Седона](https://ya-tyt.github.io/2670057-sedona-2/).
+
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
