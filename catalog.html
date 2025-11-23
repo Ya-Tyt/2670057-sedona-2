@@ -7,33 +7,33 @@
 <body>
   <header class="page-header">
       <nav class="navigation">
-        <a class="novigation-logo" href="index.html">
-          <img class="page-header-logo" src="#" alt="Логотип Седона.">
+        <a class="navigation-logo" href="index.html">
+          <img class="page-header-logo" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип сайта Седоны.">
         </a>
-        <ul class="novigation-list">
-          <li class="novigation-item">
+        <ul class="navigation-list">
+          <li class="navigation-item">
             <a class="novigation-link"  href="index.html">Главная</a>
           </li>
-          <li class="novigation-item">
-            <a class="novigation-link" href="#">О Седоне</a>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
-          <li class="novigation-item">
+          <li class="navigation-item">
             <a class="novigation-link novigation-link-current" aria-current="page" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="novigation-user">
-          <li class="novigation-item">
-            <a class="novigation-link" href="#">
+        <ul class="navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="novigation-item">
-            <a class="novigation-link" href="#">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
               <span class="visually-hidden"> Избранное </span>
             </a>
           </li>
-          <li class="novigation-item">
-            <a class="novigation-link" href="#">ХОЧУ СЮДА!</a>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -101,11 +101,11 @@
         </fieldset>
         <fieldset class="filter-price">
             <legend class="filter-title">Стоимость, ₽:</legend>
-            <label class="Minrange-price"
+            <label class="inrange-price"
               ><span class="visually-hidden">От</span>
               <input type="number" name="price-from-min" id="price-from-min" placeholder="0">
             </label>
-            <label class="Maxrange-price"
+            <label class="maxrange-price"
               ><span class="visually-hidden">До</span>
               <input type="number" name="price-from-max" id="price-from-max" placeholder="9000">
             </label>
@@ -115,8 +115,7 @@
         </form>
       </section>
       <section class="catalog-products">
-        <h2 class="visually-hidden">Каталог гостиниц с сортировкой отображения</h2>
-        <p class="catalog-title">Найдено гостиниц:38</p>
+        <h2 class="catalog-title">Найдено гостиниц:38</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала популярное</option>
           <option value="cheap">Сначала дешёвое</option>
@@ -134,7 +133,7 @@
         <ul class="product-list">
           <li class="product-card">
           <a class="product-card-link" href="#" tabindex="-1">
-            <img class="product-card-image" src="" alt="Звездное небо">
+            <img class="product-card-image" src="images/hotel-1.jpg" width="300" height="212" alt="Звездное небо">
           </a>
           <a class="product-card-link" href="#" tabindex="-1">
             <h3 class="product-card-title">Amara Resort & Spa</h3>
@@ -150,7 +149,7 @@
           </li>
           <li class="product-card">
           <a class="product-card-link" href="#" tabindex="-1">
-            <img class="product-card-image" src="" alt="Каньон на фоне неба с радугой">
+            <img class="product-card-image" src="images/hotel-2.jpg" width="300" height="212" alt="Каньон на фоне неба с радугой">
           </a>
           <a class="product-card-link" href="#" tabindex="-1">
             <h3 class="product-card-title">Villas at Poco Diablo</h3>
@@ -166,7 +165,7 @@
           </li>
           <li class="product-card">
           <a class="product-card-link" href="#" tabindex="-1">
-            <img class="product-card-image" src="" alt="Каньон на фоне голубого неба">
+            <img class="product-card-image" src="images/hotel-3.jpg" width="300" height="212" alt="Каньон на фоне голубого неба">
           </a>
           <a class="product-card-link" href="#" tabindex="-1">
             <h3 class="product-card-title">Desert Quail Inn</h3>
@@ -182,7 +181,7 @@
           </li>
           <li class="product-card">
           <a class="product-card-link" href="#" tabindex="-1">
-            <img class="product-card-image" src="" alt="Ночной каньон">
+            <img class="product-card-image" src="images/hotel-4.jpg" width="300" height="212" alt="Ночной каньон">
           </a>
           <a class="product-card-link" href="#" tabindex="-1">
             <h3 class="product-card-title">GreenTree Inn</h3>
@@ -232,32 +231,32 @@
     </main>
     <footer class="page-footer">
       <section class="social">
-        <h2 class="visually-hidden">значки соц.сетей</h2>
+        <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social-list">
           <li class="social-item">
-            <a class="button" href="#">
+            <a class="button" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="button" href="#">
+            <a class="button" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="button" href="#">
+            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
         </ul>
       </section>
       <section class="contacts">
-        <h2 class="visually-hidden">телефон</h2>
+        <h2 class="visually-hidden">Наши контакты</h2>
         <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </section>
       <a class="autor-logo" href="https://htmlacademy.ru/" target="_blank">
-        <h2 class="visually-hidden">логотип</h2>
-        <img class="autor-contacts-logo" src="#" alt="Логотип html-academy">
+        <h2 class="visually-hidden">Разработчик</h2>
+        <img class="autor-contacts-logo" src="images/logo_htmlacademy.svg" width="115" height="33" alt="Логотип html-academy">
       </a>
     </footer>
 </body>
