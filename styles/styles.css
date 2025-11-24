@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+.upper {
+  background-color: #d2e5f1;
+  background-image: url("../images/decorative/background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigation-link-button {
+  color: #ffffff;
+}
+
+.social-list {
+
+}
+
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navigation-link-bottom {
+  text-transform: uppercase;
+}
+
+.advantages-topic .reason-topic {
+
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantages-text .advantages-topic {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.advantages-title .reason-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.advantages-description .reason-description {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #FFFFFF;
+
+}
+
+.advantages-color {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.advantages-item {
+  text-align: center;
+}
+
+.reason-item {
+  text-align: center;
+}
