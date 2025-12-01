@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,47 +10,30 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
 .upper {
   background-color: #d2e5f1;
-  background-image: url("../images/decorative/background.jpg");
-  background-size: 100% auto;
+  background-image: url("../images/decorative/divider.svg"), url("../images/decorative/background.jpg");
+  background-size: 100% auto, cover;
   background-repeat: no-repeat;
+  background-position: left bottom, left top;
+  color: #FFFFFF;
 }
 
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
-  color: #000000;
-  background-color: #FFFFFF;
-}
-
-.button {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 700;
+  color: #333333;
+  background-color: #F2F2F2;
+  font-weight: 400;
   text-align: center;
-  color: #ffffff;
-  background-color: #756157;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.navigation-link-button {
-  color: #ffffff;
-}
-
-.social-list {
-
 }
 
 .navigation-link {
-  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 24px;
   color: #000000;
@@ -59,60 +42,174 @@ body {
   text-decoration: none;
 }
 
-.navigation-link-bottom {
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756157;
+  text-decoration: none;
   text-transform: uppercase;
+  border: none;
 }
 
-.advantages-topic .reason-topic {
-
-  font-family: "PT Sans", sans-serif;
+.subject {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   color: #000000;
-  background-color: #FFFFFF;
-  text-transform: uppercase;
   text-align: center;
 }
 
-.advantages-text .advantages-topic {
-  font-family: "PT Sans", sans-serif;
+.desc-text {
   font-size: 22px;
   line-height: 26px;
-  color: #000000;
-  background-color: #FFFFFF;
-  text-align: center;
 }
 
-.advantages-title .reason-title {
-  font-family: "PT Sans", sans-serif;
+.accent-color {
+  background-color: #82B3D3;
+}
+
+.light-shade {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.light-color {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-title {
+
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   color: #000000;
-  background-color: #FFFFFF;
-  text-transform: uppercase;
 }
 
-.advantages-description .reason-description {
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 400;
+.accent-title {
+  color: #ffffff;
+}
+
+.reason-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
   color: #000000;
-  background-color: #FFFFFF;
-
 }
 
-.advantages-color {
+.accent-desc {
+  color: #ffffff;
+}
+
+.accent-background {
+  background-color: #537b93;
+  background-image: url("../images/decorative/mountains-distance.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #FFFFFF;
+}
+
+.newsletter-accent {
+  color: #FFFFFF;
+}
+
+.inner-background {
+  background-color: #537b93;
+  background-image: url("../images/decorative/hill.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+}
+
+.product-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-align: left;
+}
+
+.product-card-link {
+  text-decoration: none;
+}
+
+.product-list {
+  text-align: left;
+}
+
+.catalog-title {
+  text-align: left;
+}
+
+.button-favorites,
+.button-apply {
   background-color: #82B3D3;
 }
 
-.advantages-item {
-  text-align: center;
+.button-favorites-selected {
+  background-color: #7DB54F;
 }
 
-.reason-item {
+.button-reset {
+  background-color: transparent;
+}
+
+.button-submit {
+  background-color: #82B3D3;
+  font-size: 20px;
+  line-height: 36px;
+  padding: 8px;
+  margin: -8px;
+}
+
+.button-apply,
+.button-favorites {
+  background-color: #82B3D3;
+}
+
+.pagination-link {
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+  font-weight: 700;
   text-align: center;
+  text-decoration: none;
+  background-color: #82B3D3;
+}
+
+.pagination-current {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.select-control {
+  background-color: #FFFFFF;
+  color: #333333;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.inrange-price-number {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.field {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
 }
