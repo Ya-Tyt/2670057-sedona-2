@@ -13,6 +13,9 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+
+/*общее*/
+
 .html {
   height: 100%;
 }
@@ -25,59 +28,76 @@ body {
   background-color: #F2F2F2;
   font-weight: 400;
   text-align: center;
-  display: flex;
-  min-height: 100%;
-  flex-direction: column;
   margin: 0;
 }
 
-.main-container {
+.container {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-}
-
-.page-container {
+  min-height: 100vh;
   margin: 0 auto;
   width: 1200px;
   background-color: #FFFFFF;
-  min-height: 100%;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
-.upper {
-  background-color: #d2e5f1;
-  background-image: url("../images/decorative/divider.svg"), url("../images/decorative/background.jpg");
-  background-size: 100% auto, cover;
-  background-repeat: no-repeat;
-  background-position: center bottom, center;
-  color: #FFFFFF;
+.main-container {
+  flex-grow: 1;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+/*навигация*/
+
+.navigation-logo {
+  width: 138px;
+  height: 64px;
+  position: relative;
+  z-index: 1;
 }
 
 .navigation {
   display: flex;
-  width: 1200px;
+  width: 1060px;
   margin: 0 auto;
+  height: 64px;
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  width: 339px;
+  width: 432px;
+}
+
+.navigation-item {
+  list-style-type: none;
 }
 
 .navigation-user {
-  min-width: 268px;
+  display: flex;
+  max-width: 312px;
   margin-left: auto;
 }
 
 .navigation-link {
+  display: block;
   font-size: 20px;
   line-height: 24px;
   color: #000000;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
+  padding: 20px 16px;
+}
+
+.navigation-user .navigation-link {
+  min-width: 22px;
+  min-height: 12px;
 }
 
 .button {
@@ -93,12 +113,95 @@ body {
   border: none;
 }
 
+.navigation-link-button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 8px 34px;
+  border-radius: 4px;
+  border: none;
+  margin-left: 14px;
+
+}
+
+/* футер*/
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  margin: 0 auto;
+  margin-top: 45px;
+  margin-bottom: 35px;
+}
+
+.social-list {
+  list-style-type: none;
+}
+
+.contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/*Главная страница*/
+
+.upper {
+  background-color: #d2e5f1;
+  background-image: url("../images/decorative/divider.svg"), url("../images/decorative/background.jpg");
+  background-size: 100% auto, cover;
+  background-repeat: no-repeat;
+  background-position: center bottom, center;
+  color: #FFFFFF;
+}
+
+.upper-images {
+  margin-top: 51px;
+  margin-bottom: 82px;
+}
+
+.advantages,
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 69px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.advantages {
+  margin-bottom: 64px;
+}
+
+.accent-title,
+.accent-desc {
+  color: #ffffff;
+}
+
 .subject {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   color: #000000;
   text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-topic {
+  margin: 0;
+  padding: 0 85px;
+  margin-bottom: 25px;
+  font-style: inherit;
+  font-size: 30px;
+  line-height: 36px;
 }
 
 .desc-text {
@@ -106,38 +209,105 @@ body {
   line-height: 26px;
 }
 
-.accent-color {
+.accent-stripe {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
   background-color: #82B3D3;
 }
 
-.light-shade {
+.accent-stripe-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.light:nth-child(odd) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.light-color {
+.light:nth-child(even) {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-title {
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
-  color: #000000;
+.light-2:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
-.accent-title {
-  color: #ffffff;
+.advantages-variability,
+.reason-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
+.light,
+.light-2 {
+  width: 400px;
+  height: 385px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+.advantages-description {
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.reason-description {
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 300px;
+  justify-content: space-between;
+
+}
+
+.advantages-title,
 .reason-title {
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
-  color: #000000;
+  text-transform: uppercase;
 }
 
-.accent-desc {
-  color: #ffffff;
+.reason-text {
+  margin-bottom: 64px;
+}
+
+.reason {
+  margin-bottom: 96px;
+}
+
+.page-main-description {
+  margin-bottom: 54px;
+}
+
+.search-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  align-self: center;
+  background: #756157;
+  border-radius: 4px;
+  padding: 8px 50px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 96px;
+}
+
+/*подписка*/
+
+.newsletter {
+  padding-top: 96px;
+  padding-bottom: 104px;
+  padding-left: 258px;
+  padding-right: 258px;
 }
 
 .accent-background {
@@ -152,63 +322,195 @@ body {
   color: #FFFFFF;
 }
 
-.inner-background {
-  background-color: #537b93;
-  background-image: url("../images/decorative/hill.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #FFFFFF;
-}
-
-.product-card-title {
-  font-size: 24px;
-  line-height: 28px;
-  color: #000000;
-  text-align: left;
-}
-
-.product-card-link {
-  text-decoration: none;
-}
-
-.product-list {
-  text-align: left;
-}
-
-.catalog-title {
-  text-align: left;
-}
-
-.button-favorites,
-.button-apply {
-  background-color: #82B3D3;
-}
-
-.button-favorites-selected {
-  background-color: #7DB54F;
-}
-
-.button-reset {
-  background-color: transparent;
-}
-
 .newsletter-button {
   background-color: #82B3D3;
   font-size: 20px;
   line-height: 36px;
 }
 
-.search-button {
-  font-size: 20px;
-  line-height: 36px;
+.newsletter-form {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  width: 684px;
 }
 
-.button-apply,
-.button-favorites {
+.field {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 452px;
+  padding: 14px 20px;
+  margin: 0;
+  border: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: #f2f2f2;
+}
+
+.newsletter-button {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82b3d3;
+  text-transform: uppercase;
+  padding: 8px 50px;
+  margin: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.page-main-title {
+  text-transform: uppercase;
+}
+
+/*Каталог*/
+/*filter*/
+
+.inner-background {
+  background-color: #537b93;
+  background-image: url("../images/decorative/hill.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.inner-header {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  padding-top: 35px;
+  margin-bottom: 8px;
+  text-align: left;
+  margin: 0;
+}
+
+.breadcrumbs {
+  list-style-type: none;
+  text-align: left;
+}
+
+.filter-list {
+  list-style-type: none;
+}
+
+.filters {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.filter-wrap {
+  display: grid;
+  grid-template-columns: 151px 151px 1fr 191px;
+  justify-content: space-between;
+  gap: 69px;
+}
+
+.button-apply {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
   background-color: #82B3D3;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 8px 34px;
+  border-radius: 4px;
+  border: none;
+  margin-left: 14px;
+}
+
+.filter-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.filter__buttons {
+  padding-top: 56px;
+}
+
+.button-reset {
+  background-color: transparent;
+  margin-top: 32px;
+}
+
+/*навигация каталога*/
+.catalog-products {
+  padding: 0 70px;
+}
+
+.catalog-navigation {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.catalog-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  margin: 0;
+  margin-right: 200px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.select-control {
+  margin: 0;
+  width: 292px;
+  padding: 11px 40px 12px 17px;
+  border: 2px solid #e5e5e5;
+  color: #333333;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+/*карточки каталога*/
+.product-list {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/*пагинация*/
+.pagination {
+  display: flex;
+  margin: 0;
+  margin-left: 70px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 14px 20px;
   font-size: 20px;
   line-height: 36px;
   color: #FFFFFF;
@@ -216,40 +518,10 @@ body {
   text-align: center;
   text-decoration: none;
   background-color: #82B3D3;
+  border-radius: 4px;
 }
 
 .pagination-current {
   background-color: #F2F2F2;
   color: #000000;
-}
-
-.contacts-phone {
-  font-size: 40px;
-  line-height: 40px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-.select-control {
-  background-color: #FFFFFF;
-  color: #333333;
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 400;
-}
-
-.inrange-price-number {
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #000000;
-}
-
-.field {
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 24px;
 }
