@@ -409,86 +409,191 @@ body {
   margin-bottom: 40px;
 }
 
+.filter-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 70px;
+}
+.filter-group {
+  width: 220px;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-group-first {
+  margin-left: 70px;
+}
+
+.filter-group-hotels {
+  width: 250px;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-title {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 0;
+  margin-bottom: 33px;
+  padding-top: 7px;
+}
+
 .filter-list {
+  padding: 0;
+  margin: 0;
   list-style-type: none;
 }
 
-.filter-wrap {
-  display: grid;
-  grid-template-columns: 151px 151px 1fr 191px;
-  gap: 69px;
-}
-
-.filter-title {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-  margin-bottom: 32px;
-}
-
-.catalog-filter-infrastructure {
-  grid-column-start: 1;
-}
-
-.control-input {
+.filter-item {
+  font-family: inherit;
   font-size: 18px;
   line-height: 23px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.control {
   position: relative;
-  padding-left: 36px;
-  cursor: pointer;
-  color: #ffffff;
   display: block;
-
+  padding-left: 36px;
+  padding-bottom: 16px;
 }
 
+.control-hotel {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+  padding-bottom: 16px;
+}
 
-.button-apply {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  text-align: center;
-  color: #ffffff;
-  background-color: #82B3D3;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 8px 34px;
+.control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
   border-radius: 4px;
-  border: none;
-  margin-left: 14px;
+  background-color: #ffffff;
+  cursor: pointer;
 }
 
+.control-hotel-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
 
-.filter-group {
-  margin: 0;
+.filter-price {
+  width: 288px;
+  border: none;
   padding: 0;
-  border: none;
+  margin-right: 0;
+  margin-left: 40px;
 }
-
 
 .filter-title {
+  font-family: inherit;
   font-size: 20px;
   line-height: 24px;
+  color: #ffffff;
   font-weight: 700;
-  margin-bottom: 32px;
-}
-
-
-.filter-list {
-  list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  padding-top: 7px;
+  margin-bottom: 33px;
 }
 
-
-.filter__buttons {
-  padding-top: 56px;
+.price-form-pricemin {
+  display: flex;
+  gap: 2px;
 }
 
+.input-container  {
+  position: relative;
+  display: inline-block;
+}
+
+.price-input {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  width: 121px;
+  padding-top: 12px;
+  padding-left: 20px;
+  padding-bottom: 12px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  overflow: hidden;
+  -webkit-appearance: textfield;
+          appearance: textfield;
+}
+
+.price-input-second {
+  border: none;
+  border-radius: 0 4px 4px 0;
+}
+
+.input-text {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  position: absolute;
+  top: 14px;
+  right: 20px;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.filter-button {
+  display: flex;
+  flex-direction: column;
+  margin-top: 56px;
+  margin-left: 58px;
+  border: none;
+}
+
+.button-apply {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82b3d3;
+  text-transform: uppercase;
+  padding: 8px 50px;
+  border-radius: 4px;
+  width: 191px;
+  border: none;
+  margin-bottom: 32px;
+  margin-left: 11px;
+  margin-top: 7px;
+}
 
 .button-reset {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
   background-color: transparent;
-  margin-top: 32px;
+  text-transform: uppercase;
+  width: 191px;
+  height: 36px;
+  border: none;
+  margin-left: 11px;
 }
+
 
 
 /*навигация каталога*/
